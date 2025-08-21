@@ -45,7 +45,25 @@ export const Home = () => {
             </div>
           </div>
         </section>
-       
+        {/* About us section start */}
+        <section className="about-section py-5">
+            <div className="container">
+                <div className="row">
+                    <div className="col-md-6">
+                        <img src={AboutImg} className="w-100"></img>
+                        
+                    </div>
+                    <div className="col-md-6">
+                        <span>About Us</span>
+                        <h2>Sarah constraction </h2>
+                       <p>We believe every project is unique, and every client deserves personalized solutions. At Sarah Construction, we listen carefully to your needs and transform them into structures that reflect your vision.</p>
+<p>Our commitment to quality, integrity, and transparency ensures a smooth and stress-free construction experience. With us, your dream project is in capable hands.</p>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
       </main>
 
       <footer>

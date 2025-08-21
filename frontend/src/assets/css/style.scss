@@ -79,4 +79,16 @@ header{
 
     }
 }
+.about-section{
+    img{
+        border-radius: 40px;
+    }
+    span{
+        color: $primary-color;
+        text-transform: uppercase;
+        font-size: 1em;
+        font-weight: 500;
+        padding-bottom: 10px;
+    }
 
+}
