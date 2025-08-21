@@ -1,6 +1,7 @@
 $primary-color : #fe538d;
 $secondry-color : #ffb703;
 $text-color : #000;
+$text-white : #ffffff;
 
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
@@ -20,7 +21,30 @@ h3{
 p{
     font-size: 1.2em;
 }
+.btn-primary{
+    background-color: $primary-color;
+    border: 1px solid $primary-color;
+    padding: 15px 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    &:hover{
+        background-color: $secondry-color;
+            border: 1px solid $secondry-color;
 
+    }
+}
+.btn-secondary{
+    background-color: $secondry-color;
+    border: 1px solid $secondry-color;
+    padding: 15px 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    &:hover{
+        background-color: $primary-color;
+            border: 1px solid $primary-color;
+
+    }
+}
 header{
     nav{
         .nav-link{
@@ -42,10 +66,17 @@ header{
         }
     }
 }
-.section-1{
+.banner-section{
     .hero{
-        background-image: url('../images/hero.jpg');
+        background: linear-gradient(to right,rgba(0,0,0,0.8), rgba(0,0,0,0)),url('../images/hero.jpg');
         min-height: 800px;
+        color: $text-white;
+        span{
+            color: $secondry-color;
+            font-size: 1em;
+            font-weight: 500;
+        }
 
     }
 }
+
