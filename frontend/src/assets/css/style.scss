@@ -2,6 +2,7 @@ $primary-color : #fe538d;
 $secondry-color : #ffb703;
 $text-color : #000;
 $text-white : #ffffff;
+$dark-background : #0e0d0d;
 
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
@@ -17,6 +18,7 @@ h2{
 }
 h3{
     font-size: 2em;
+    color: $secondry-color;
 }
 p{
     font-size: 1.2em;
@@ -45,6 +47,7 @@ p{
 
     }
 }
+
 header{
     nav{
         .nav-link{
@@ -64,6 +67,25 @@ header{
             }
 
         }
+    }
+}
+footer{
+    background-color: $dark-background;
+    color: $text-white;
+
+    h3{
+        font-size: 1.5em;
+        color: $secondry-color;
+    }
+    ul{
+        li{
+            padding: 5x opx;
+        }
+    }
+    a{
+        color: $text-white;
+        font-size: 1.2em;
+        text-decoration: none;
     }
 }
 .banner-section{

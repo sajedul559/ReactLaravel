@@ -47,7 +47,7 @@ export const Home = () => {
         </section>
         {/* About us section start */}
         <section className="about-section py-5">
-            <div className="container">
+            <div className="container py-5">
                 <div className="row">
                     <div className="col-md-6">
                         <img src={AboutImg} className="w-100"></img>
@@ -64,11 +64,55 @@ export const Home = () => {
             </div>
 
         </section>
+       
+          <footer>
+            <div className="container py-5">
+                <div className="row">
+                    <div className="col-md-3">
+                        <h3>Sarah Constraction</h3>
+                        <div className="pe-5">
+                        <p>tjjeklr fjsdklfl ffjsdfl sdkfjsl sfklsf skl fsklfjsdfsl jklfjslfjslfjsl fjiksfjls fflksjflsjflslffkls flfjl f</p>
+
+                        </div>
+
+                    </div>
+                    <div className="col-md-3">
+                        <h3>Our Services</h3>
+                        <ul>
+                          <li><a href="#"> Specially Constraction</a></li>
+                          <li><a href="#"> Specially Constraction</a></li>
+                          <li><a href="#"> Specially Constraction</a></li>
+                          <li><a href="#"> Specially Constraction</a></li>
+                        </ul>
+
+                    </div>
+                    <div className="col-md-3">
+                        <h3>Quick Links</h3>
+                         <ul>
+                          <li><a href="#"> About Us</a></li>
+                          <li><a href="#">Our Services</a></li>
+                          <li><a href="#">Blogs</a></li>
+                          <li><a href="#">Projects</a></li>
+                        </ul>
+
+                    </div>
+                    <div className="col-md-3">
+                        <h3>Contact Us</h3>
+                         <ul>
+                          <li><a href="#"> About Us</a></li>
+                          <li><a href="#">Our Services</a></li>
+                          
+                        </ul>
+
+                    </div>
+                </div>
+                <hr/>
+                <p className="text-center">All rights resrved 2025 @ <b>SarahIT</b></p>
+            </div>
+          </footer>
       </main>
 
-      <footer>
-        <h1>Hello Footer</h1>
-      </footer>
+    
     </>
   );
 };
