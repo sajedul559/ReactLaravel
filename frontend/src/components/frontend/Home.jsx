@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import AboutImg from "../../assets/images/about-us.jpg"
+import ServiceImg from "../../assets/images/construction8.jpg"
 
 export const Home = () => {
   return (
@@ -64,7 +65,39 @@ export const Home = () => {
             </div>
 
         </section>
-       
+        <section className="service-section bg-light py-5">
+           <div className="container-fluid py-5">
+            <div className="section-header text-center">
+              <span>Our Sevices</span>
+              <h2>Our construction services</h2>
+              <p>We offers a divery way of construction service,
+                spanning, recedential, commercial and house.
+              </p>
+
+            </div>
+            <div className="row">
+              <div className="col-md-3 col-lg-3">
+                <div className="item">
+                  <div className="service-image">
+                    <img src={ServiceImg} alt="" className="w-100"></img>
+
+                    <div className="service-body">
+                      <div className="service-title">
+                         <h3>Specially Constraction</h3>
+                      </div>
+                      <div className="service-content">
+                          <p>We offers a divery way of construction service,
+                        spanning, recedential, commercial and house.
+                      </p>
+                                          <button className="btn btn-primary">Contact Now</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           </div>
+        </section>
           <footer>
             <div className="container py-5">
                 <div className="row">
