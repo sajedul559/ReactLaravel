@@ -17,6 +17,45 @@ import WhyChoseImg1 from "../../assets/images/icon-1.svg"
 import WhyChoseImg2 from "../../assets/images/icon-2.svg"
 import WhyChoseImg3 from "../../assets/images/icon-3.svg"
 
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/pagination";
+const testimonials = [
+  {
+    id: 1,
+    name: "Shivani",
+    role: "CTO",
+    img: "https://urbenedge.liveprojectlab.in/uploads/testimonials/17383942924.jpg",
+    text: "We recently partnered with SAASA for our construction project, and the experience was outstanding. Their team demonstrated exceptional professionalism, attention to detail, and commitment to quality. From planning to execution.",
+    rating: 5,
+  },
+  {
+    id: 2,
+    name: "Rani",
+    role: "DEV",
+    img: "https://urbenedge.liveprojectlab.in/uploads/testimonials/17383942613.jpg",
+    text: "We recently partnered with SAASA for our construction project, and the experience was outstanding. Their team demonstrated exceptional professionalism, attention to detail, and commitment to quality. From planning to execution.",
+    rating: 5,
+  },
+  {
+    id: 3,
+    name: "Mohit",
+    role: "Developer",
+    img: "https://urbenedge.liveprojectlab.in/uploads/testimonials/17383942432.jpg",
+    text: "We recently partnered with SAASA for our construction project, and the experience was outstanding. Their team demonstrated exceptional professionalism, attention to detail, and commitment to quality. From planning to execution.",
+    rating: 5,
+  },
+  {
+    id: 4,
+    name: "John Doe",
+    role: "CEO",
+    img: "https://urbenedge.liveprojectlab.in/uploads/testimonials/17383942081.jpg",
+    text: "We recently partnered with SAASA for our construction project, and the experience was outstanding. Their team demonstrated exceptional professionalism, attention to detail, and commitment to quality. From planning to execution.",
+    rating: 5,
+  },
+];
+
 export const Home = () => {
   return (
     <>
@@ -324,6 +363,83 @@ export const Home = () => {
             </div>
            </div>
         </section>
+
+        <section className="section-5 py-5">
+      <div className="container">
+        {/* Section Header */}
+        <div className="section-header text-center mb-5">
+          <span className="text-uppercase">Testimonials</span>
+          <h2 className="mt-2">What people are saying about us</h2>
+          <p className="text-muted">
+            We offer a diverse array of construction services, spanning residential, commercial, and industrial projects.
+          </p>
+        </div>
+
+        {/* Swiper */}
+        <Swiper
+          modules={[Pagination]}
+          spaceBetween={50}
+          slidesPerView={3}
+          pagination={{ clickable: true }}
+          breakpoints={{
+            0: { slidesPerView: 1 },
+            768: { slidesPerView: 2 },
+            1024: { slidesPerView: 3 },
+          }}
+        >
+          {testimonials.map((t) => (
+            <SwiperSlide key={t.id}>
+              <div className="card shadow border-0 h-100">
+                <div className="card-body p-5">
+                  {/* Rating */}
+                  <div className="rating d-flex mb-3">
+                    {Array.from({ length: t.rating }).map((_, i) => (
+                      <svg
+                        key={i}
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        fill="currentColor"
+                        className="bi bi-star-fill text-warning me-1"
+                        viewBox="0 0 16 16"
+                      >
+                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 
+                          6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 
+                          0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 
+                          3.356.83 4.73c.078.443-.36.79-.746.592L8 
+                          13.187l-4.389 2.256z" />
+                      </svg>
+                    ))}
+                  </div>
+
+                  {/* Testimonial Content */}
+                  <div className="content pb-3">
+                    <p className="text-muted">{t.text}</p>
+                  </div>
+
+                  <hr />
+
+                  {/* Author Info */}
+                  <div className="d-flex align-items-center mt-3">
+                    <img
+                      src={t.img}
+                      alt={t.name}
+                      width="50"
+                      height="50"
+                      className="rounded-circle"
+                    />
+                    <div className="ps-3">
+                      <div className="fw-bold">{t.name}</div>
+                      <div className="text-muted small">{t.role}</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
+    </section>
           <footer>
             <div className="container py-5">
                 <div className="row">
