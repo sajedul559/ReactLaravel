@@ -2,7 +2,17 @@ import React from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import AboutImg from "../../assets/images/about-us.jpg"
-import ServiceImg from "../../assets/images/construction8.jpg"
+import ServiceImg from "../../assets/images/construction7.jpg"
+import ServiceImg1 from "../../assets/images/construction9.jpg"
+
+import ServiceImg2 from "../../assets/images/construction10.jpg"
+import ServiceImg3 from "../../assets/images/construction121.jpg"
+
+import ProjectImg1 from "../../assets/images/construction1.jpg"
+import ProjectImg2 from "../../assets/images/construction2.jpg"
+import ProjectImg3 from "../../assets/images/construction3.jpg"
+import ProjectImg4 from "../../assets/images/construction4.jpg"
+
 import WhyChoseImg1 from "../../assets/images/icon-1.svg"
 import WhyChoseImg2 from "../../assets/images/icon-2.svg"
 import WhyChoseImg3 from "../../assets/images/icon-3.svg"
@@ -68,7 +78,99 @@ export const Home = () => {
             </div>
 
         </section>
-        <section className="section-4 py-5">
+       
+        <section className="service-section bg-light py-5">
+           <div className="container-fluid py-5">
+            <div className="section-header text-center">
+              <span>Our Sevices</span>
+              <h2>Our construction services</h2>
+              <p>We offers a divery way of construction service,
+                spanning, recedential, commercial and house.
+              </p>
+
+            </div>
+            <div className="row">
+              <div className="col-md-3 col-lg-3">
+                <div className="item">
+                  <div className="service-image">
+                    <img src={ServiceImg} alt="" className="w-100"></img>
+
+                    <div className="service-body">
+                      <div className="service-title">
+                         <h3>Specially Constraction</h3>
+                      </div>
+                      <div className="service-content">
+                          <p>We offers a divery way of construction service,
+                        spanning, recedential, commercial and house.
+                      </p>
+                                          <button className="btn btn-primary">Contact Now</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+                            <div className="col-md-3 col-lg-3">
+                <div className="item">
+                  <div className="service-image">
+                    <img src={ServiceImg1} alt="" className="w-100"></img>
+
+                    <div className="service-body">
+                      <div className="service-title">
+                         <h3>Specially Constraction</h3>
+                      </div>
+                      <div className="service-content">
+                          <p>We offers a divery way of construction service,
+                        spanning, recedential, commercial and house.
+                      </p>
+                                          <button className="btn btn-primary">Contact Now</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+                            <div className="col-md-3 col-lg-3">
+                <div className="item">
+                  <div className="service-image">
+                    <img src={ServiceImg2} alt="" className="w-100"></img>
+
+                    <div className="service-body">
+                      <div className="service-title">
+                         <h3>Specially Constraction</h3>
+                      </div>
+                      <div className="service-content">
+                          <p>We offers a divery way of construction service,
+                        spanning, recedential, commercial and house.
+                      </p>
+                                          <button className="btn btn-primary">Contact Now</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+                            <div className="col-md-3 col-lg-3">
+                <div className="item">
+                  <div className="service-image">
+                    <img src={ServiceImg3} alt="" className="w-100"></img>
+
+                    <div className="service-body">
+                      <div className="service-title">
+                         <h3>Specially Constraction</h3>
+                      </div>
+                      <div className="service-content">
+                          <p>We offers a divery way of construction service,
+                        spanning, recedential, commercial and house.
+                      </p>
+                      <button className="btn btn-primary">Contact Now</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           </div>
+        </section>
+
+         <section className="section-4 py-5">
           <div className="container py-5">
             {/* Section Header */}
             <div className="section-header text-center mb-5">
@@ -133,21 +235,20 @@ export const Home = () => {
             </div>
           </div>
         </section>
-        <section className="service-section bg-light py-5">
+
+         <section className="service-section bg-light py-5">
            <div className="container-fluid py-5">
             <div className="section-header text-center">
-              <span>Our Sevices</span>
-              <h2>Our construction services</h2>
-              <p>We offers a divery way of construction service,
-                spanning, recedential, commercial and house.
-              </p>
+              <span>Our Projects</span>
+              <h2>Discover our diverse range of projects</h2>
+              <p>We offer a diverse array of construction services, spanning residential, commercial, and industrial projects.</p>
 
             </div>
             <div className="row">
               <div className="col-md-3 col-lg-3">
                 <div className="item">
                   <div className="service-image">
-                    <img src={ServiceImg} alt="" className="w-100"></img>
+                    <img src={ProjectImg1} alt="" className="w-100"></img>
 
                     <div className="service-body">
                       <div className="service-title">
@@ -166,7 +267,7 @@ export const Home = () => {
                             <div className="col-md-3 col-lg-3">
                 <div className="item">
                   <div className="service-image">
-                    <img src={ServiceImg} alt="" className="w-100"></img>
+                    <img src={ProjectImg4} alt="" className="w-100"></img>
 
                     <div className="service-body">
                       <div className="service-title">
@@ -185,7 +286,7 @@ export const Home = () => {
                             <div className="col-md-3 col-lg-3">
                 <div className="item">
                   <div className="service-image">
-                    <img src={ServiceImg} alt="" className="w-100"></img>
+                    <img src={ProjectImg2} alt="" className="w-100"></img>
 
                     <div className="service-body">
                       <div className="service-title">
@@ -204,7 +305,7 @@ export const Home = () => {
                             <div className="col-md-3 col-lg-3">
                 <div className="item">
                   <div className="service-image">
-                    <img src={ServiceImg} alt="" className="w-100"></img>
+                    <img src={ProjectImg3} alt="" className="w-100"></img>
 
                     <div className="service-body">
                       <div className="service-title">
@@ -214,7 +315,7 @@ export const Home = () => {
                           <p>We offers a divery way of construction service,
                         spanning, recedential, commercial and house.
                       </p>
-                                          <button className="btn btn-primary">Contact Now</button>
+                      <button className="btn btn-primary">Contact Now</button>
                       </div>
                     </div>
                   </div>
